@@ -17,7 +17,34 @@ public class TrainCar {
         String[] brokenUpEvidence = evidence.split(" ");
         String object = brokenUpEvidence[brokenUpEvidence.length - 1]
                 .replace(".", "");
-
+    //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
+            //sign out of github next time or your code gets it
         return "Nice to meet you. My name is " + passenger + ". Hmm... a "
                 + object + "? I saw " + evidence + ".";
     }
