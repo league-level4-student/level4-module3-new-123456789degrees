@@ -33,12 +33,14 @@ public class RainbowZombieCongaLine {
 
     // Make the passed in zombie the first Zombie in the conga line!
     public void engine(Zombie dancer) {
-    	congaLine.setHead(dancer);
+    	if (congaLine.getHead() == null) {
+    		congaLine.setHead(new Node(dancer));	
+    	}
     }
 
     // Make the passed in zombie the last Zombie in the conga line!
     public void caboose(Zombie dancer) {
-    	congaLine.setTail();
+    	congaLine.setTail(new Node(dancer));
     }
 
     // Place the zombie at the designated position in the conga line!
