@@ -1,6 +1,7 @@
 package _04_Morse_Code;
 
 import _03_Intro_to_Binary_Trees.BinaryTree;
+import _03_Intro_to_Binary_Trees.Node;
 
 public class MorseDecoder {
 
@@ -55,7 +56,7 @@ public class MorseDecoder {
      * 1.) See if you can decode the following message using the binary tree and
      * print it to the console:
      * 
-     * -.-- --- ..- .- .-. . .- -- .- --.. .. -. --.
+     * -.-- --- ..- . - .-. . .- -- .- --.. .. -. --.
      * 
      * 2.) Then use the binary tree and the scanner class to create a morse code
      * translator. The user should be able to type multiple letters in morse
@@ -65,6 +66,26 @@ public class MorseDecoder {
      */
     void decode() {
         String morseCode = "-.-- --- ..- .- .-. . .- -- .- --.. .. -. --.";
+        String ans = "";
+        String[] arr = morseCode.split(" ");
+        for (String s : arr) {
+        	MorseCode code = new MorseCode(s);
+        	Node<MorseCode> root = mcTree.getRoot();
+        	while (root != null) {
+        		int compare = code.compareTo(root.getValue());
+        		if (compare == 0) {
+        			ans += root.getValue().getDecoded();
+        			break;
+        		}
+        		else if (compare == 1) {
+        			root = root.getRight();
+        		}
+        		else {
+        			root = root.getLeft();
+        		}
+        	}
+        }
+        System.out.println(ans);
     }
 
 }
