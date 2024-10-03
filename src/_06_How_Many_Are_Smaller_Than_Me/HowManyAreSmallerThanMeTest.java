@@ -40,7 +40,6 @@ public class HowManyAreSmallerThanMeTest {
         av.printVertical();
         
         int me = nums.get(rand.nextInt(nums.size()));
-        
         assertEquals(findSmallest(me), hm.howManyAreSmallerThanMe(av, me) );
         
     }
